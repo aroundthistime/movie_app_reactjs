@@ -1,0 +1,46 @@
+.movies .movies__movie{
+    background-color: rgb(137, 141, 150);
+    border-radius: 25px;
+    position : relative;
+    display : flex;
+    padding : 15px 10px 15px 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+}
+
+.movies__movie img{
+    position : relative;
+    width : 30%;
+    top : -30px;
+    left : 20px;
+    margin-right : 35px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.movies__movie .movie__title{
+    font-size : 25px;
+    margin-right : 8px;
+}
+
+.movie__year{
+    opacity: 0.6;
+}
+
+.movie__genres{
+    display : flex;
+    padding : 0;
+    list-style-type: none;
+    margin-top : 10px;
+    opacity : 0.8;
+    margin-bottom : 30px;
+}
+
+.movie__genres .movie__genre:not(:last-child):after{
+    content : ", ";
+    margin-right : 5px;
+}
